@@ -1,0 +1,11 @@
+<div class="weather-cards">
+    <div *ngFor="let data of weatherData" class="weather-card">
+        <h3>{{ data.location.name }}</h3>
+        <p>Temperature: {{ data.current.temp_c }} °C</p>
+        <p>Condition: {{ data.current.condition.text }}</p>
+        <button class="remove-button" (click)="removeCity(data.location.name)">Remove</button>
+    </div>
+    <div *ngIf="cities.length === 0" class="no-cities-card">
+        <p>No cities selected. Please add some cities to view the weather.</p>
+    </div>
+</div>

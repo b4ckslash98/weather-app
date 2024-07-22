@@ -1,0 +1,11 @@
+<div style="margin-bottom: 20px;">
+  <app-city-selector (citiesChanged)="onCitiesChanged($event)" #citySelector></app-city-selector>
+</div>
+
+<div *ngIf="cities.length > 0">
+  <app-weather-display [cities]="cities" (removedCity)="citySelector.onRemovedCity($event)"></app-weather-display>
+</div>
+
+<!-- <div *ngIf="cities.length === 0" class="no-cities-card">
+  <p>No cities selected. Please add some cities to view the weather.</p>
+</div> -->

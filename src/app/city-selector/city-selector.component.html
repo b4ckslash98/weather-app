@@ -1,0 +1,14 @@
+<!-- city-selector.component.html -->
+<div class="container">
+    <div class="input-wrapper">
+        <input [(ngModel)]="newCity" placeholder="Enter city name" (keyup)="onKeyUp($event)"
+            (keydown)="onKeyDown($event)" class="city-input" />
+        <button class="add-button" (click)="addCity()">Add City</button>
+    </div>
+    <!-- <ul class="city-list">
+        <li *ngFor="let city of cities">
+            {{ city }}
+            <button class="remove-button" (click)="removeCity(city)">Remove</button>
+        </li>
+    </ul> -->
+</div>

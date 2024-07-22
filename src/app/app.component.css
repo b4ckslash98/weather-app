@@ -1,0 +1,15 @@
+.no-cities-card {
+    margin: auto;
+    padding: 20px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #999;
+}
+
+.no-cities-card p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
